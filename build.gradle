@@ -1,0 +1,93 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+// Add shadow to collapsed compile
+group 'net.Duels'
+version '7.4'
+
+allprojects {
+    apply plugin: 'java'
+    compileJava {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+        maven { url = 'https://repo.codemc.io/repository/maven-public/' }
+        maven { url = 'https://jitpack.io' }
+        maven { url = 'https://papermc.io/repo/repository/maven-releases/' }
+        maven { url = 'https://repo.citizensnpcs.co/' }
+        maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+        maven { url = 'https://repo.mvdw-software.com/content/groups/public/' }
+        maven {
+            url = "http://dja.kr:55201/spigot"
+            allowInsecureProtocol(true)
+        }
+    }
+
+    dependencies {
+        // Internal dependencies
+        if (name.startsWith("api_")) {
+            compileOnly(project(":core"))
+        }
+
+        // Minecraft dependencies
+        compileOnly 'com.mojang:authlib:1.5.25'
+        // Project dependencies
+        compileOnly 'org.projectlombok:lombok:1.18.22'
+        annotationProcessor 'org.projectlombok:lombok:1.18.22'
+        testCompileOnly 'org.projectlombok:lombok:1.18.22'
+        testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':api_v1_8_R3')
+    implementation project(':api_v1_9_R2')
+    implementation project(':api_v1_10_R1')
+    implementation project(':api_v1_11_R1')
+    implementation project(':api_v1_12_R1')
+    implementation project(':api_v1_13_R2')
+    implementation project(':api_v1_14_R1')
+    implementation project(':api_v1_15_R1')
+    implementation project(':api_v1_16_R3')
+    implementation project(':api_v1_17_R1')
+    implementation project(':api_v1_18_R1')
+    shadow project(':core')
+    shadow project(':api_v1_8_R3')
+    shadow project(':api_v1_9_R2')
+    shadow project(':api_v1_10_R1')
+    shadow project(':api_v1_11_R1')
+    shadow project(':api_v1_12_R1')
+    shadow project(':api_v1_13_R2')
+    shadow project(':api_v1_14_R1')
+    shadow project(':api_v1_15_R1')
+    shadow project(':api_v1_16_R3')
+    shadow project(':api_v1_17_R1')
+    shadow project(':api_v1_18_R1')
+}
+
+jar {
+    finalizedBy(shadowJar)
+}
+
+shadowJar {
+    destinationDirectory = file("allFiles")
+    relocate 'com.cryptomorin.xseries', 'net.Duels.libs.xseries'
+    relocate 'org.apache.commons.io', 'net.Duels.libs.commons'
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        duplicatesStrategy DuplicatesStrategy.INCLUDE
+        include '**/*.yml'
+        filter(ReplaceTokens, tokens: [version: project.version])
+    }
+}

@@ -1,0 +1,26 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+group 'net.Duels'
+version '7.4'
+
+dependencies {
+    // Minecraft Dependencies
+    compileOnly("org.spigotmc:spigot:1.12.2")
+    // Maven dependencies
+    compileOnly 'org.jetbrains:annotations:22.0.0'
+    implementation 'com.github.cryptomorin:XSeries:8.6.1'
+    compileOnly 'net.citizensnpcs:citizens:2.0.29-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.1'
+    compileOnly ('be.maximvdw:MVdWPlaceholderAPI:2.1.1-SNAPSHOT') {
+        exclude group: 'org.spigotmc'
+    }
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        duplicatesStrategy DuplicatesStrategy.INCLUDE
+        include '**/*.yml'
+        filter(ReplaceTokens, tokens: [version: project.version])
+    }
+}
