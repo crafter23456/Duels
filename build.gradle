@@ -59,7 +59,7 @@ dependencies {
     implementation project(':api_v1_15_R1')
     implementation project(':api_v1_16_R3')
     implementation project(':api_v1_17_R1')
-    implementation project(':api_v1_18_R1')
+    //implementation project(':api_v1_18_R1')
     shadow project(':core')
     shadow project(':api_v1_8_R3')
     shadow project(':api_v1_9_R2')
@@ -71,7 +71,7 @@ dependencies {
     shadow project(':api_v1_15_R1')
     shadow project(':api_v1_16_R3')
     shadow project(':api_v1_17_R1')
-    shadow project(':api_v1_18_R1')
+    //shadow project(':api_v1_18_R1')
 }
 
 jar {
