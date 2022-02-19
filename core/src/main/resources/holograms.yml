@@ -1,0 +1,115 @@
+#
+# hologram line:
+# height,Text (ex: 0.35,Hello)
+#
+holograms:
+  stats:
+    lines:
+      - '0,&6&lYour Duels Game Profile'
+      - '0.35,&fRank: <rank>'
+      - '0.35,&fProgress: <progress>'
+      - '0.35,&fTotal Score: &a<totalScore>'
+      - '0.35,&fTotal Kills: &a<totalKills>' 
+      - '0.35,&fTotal Wins: &a<totalWins>'
+      - '0.35,&fTotal Deaths: &a<totalDeaths>' 
+      - '0.35,&fTotal BestStreak: &a<totalBestStreak>' 
+      - '0.35,&fTotal Coins: &a<totalCoins>'  
+      - '0.35,&fTotal Xp: &a<totalXp>' 
+    locations: []  
+  leaderboards:
+    KILLS:
+      lines:
+        - '0,&6&lDuels Total Kills'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%kills_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%kills_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%kills_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%kills_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%kills_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%kills_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%kills_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%kills_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%kills_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%kills_10%%'
+        - '0.35,'
+      locations: []
+    WINS:
+      lines:
+        - '0,&6&lDuels Total Wins'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%wins_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%wins_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%wins_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%wins_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%wins_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%wins_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%wins_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%wins_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%wins_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%wins_10%%'
+        - '0.35,'
+      locations: []
+    WINSTREAK:
+      lines:
+        - '0,&6&lDuels Total Win Streak'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%winstreak_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%winstreak_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%winstreak_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%winstreak_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%winstreak_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%winstreak_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%winstreak_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%winstreak_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%winstreak_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%winstreak_10%%'
+        - '0.35,'
+      locations: []
+    BESTSTREAK:
+      lines:
+        - '0,&6&lDuels Total Best Streak'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%beststreak_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%beststreak_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%beststreak_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%beststreak_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%beststreak_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%beststreak_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%beststreak_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%beststreak_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%beststreak_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%beststreak_10%%'
+        - '0.35,'
+      locations: []
+    SCORE:
+      lines:
+        - '0,&6&lDuels Total Score'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%score_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%score_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%score_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%score_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%score_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%score_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%score_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%score_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%score_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%score_10%%'
+        - '0.35,'
+      locations: []
+    COIN:
+      lines:
+        - '0,&6&lDuels Total Coin'
+        - '0.35,'
+        - '0.35,&e1. &7%%player_1%% &7- &6%%coin_1%%'
+        - '0.35,&e2. &7%%player_2%% &7- &6%%coin_2%%'
+        - '0.35,&e3. &7%%player_3%% &7- &6%%coin_3%%'
+        - '0.35,&e4. &7%%player_4%% &7- &6%%coin_4%%'
+        - '0.35,&e5. &7%%player_5%% &7- &6%%coin_5%%'
+        - '0.35,&e6. &7%%player_6%% &7- &6%%coin_6%%'
+        - '0.35,&e7. &7%%player_7%% &7- &6%%coin_7%%'
+        - '0.35,&e8. &7%%player_8%% &7- &6%%coin_8%%'
+        - '0.35,&e9. &7%%player_9%% &7- &6%%coin_9%%'
+        - '0.35,&e10. &7%%player_10%% &7- &6%%coin_10%%'
+        - '0.35,'
+      locations: []

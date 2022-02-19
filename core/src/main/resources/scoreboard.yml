@@ -1,0 +1,116 @@
+lobby-scoreboard:
+  title: '&e&lDUELS'
+  text-adornment: true
+  lines:
+  - ''
+  - '&fName: &a<player>'
+  - '&fRank: &a<rank>'
+  - '&fKills: &a<kills>'
+  - '&fWins: &a<kills>'  
+  - '&fDeaths: &a<deaths>'
+  - '&fScore: &a<score>'
+  - '&fBest Streak: &a<beststreaks>'
+  - '&fCoins: &a<coins>'  
+  - '&fXp: &a<xp>'    
+  - ''
+  - '&fOnline: &a<online>'
+  - '&fPing: &a<ping>ms'
+  - ''
+  - '&ewww.duel.com'
+uhc-duels:
+  setup-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - ''
+      - '&a>> &f&lSetup:'
+      - ''
+      - '&fName: &7<name>'
+      - ''
+      - '&fWait Location: &7<check_wait_location>'
+      - '&fSpec Location: &7<check_spec_location>'
+      - ''
+      - '&fSpawn1: &7<check_spawn1_location>'
+      - '&fSpawn2: &7<check_spawn2_location>'
+      - ''
+      - '&fMax Build Y: &7<check_max_build_y_location>'    
+      - ''         
+      - '&fCheck: &7<check_all>'
+      - ''
+      - '&ewww.duel.com'
+  waiting-player-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - '&7<date> &8Duel'
+      - ''
+      - '&fMap: &a<map>'
+      - '&fPlayers: &a<on>/<max>'
+      - ''
+      - '&fWaiting...'
+      - ''
+      - '&fServer: &a<server>'
+      - ''
+      - '&ewww.duel.com'
+  counting-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - '&7<date> &8Duel'
+      - ''
+      - '&fMap: &a<map>'
+      - '&fPlayers: &a<on>/<max>'
+      - ''
+      - '&fStarting in &a<time>s'
+      - ''
+      - '&fServer: &a<server>'
+      - ''
+      - '&ewww.duel.com'
+  ingame-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - '&7<date> &8Duel'
+      - ''
+      - '&fTime Left: &a<time>'
+      - ''
+      - '&a<you>'
+      - '&c<enemy>'
+      - ''
+      - '&fMap: &a<map>'
+      - ''
+      - '&fMode: &aUHC Duel'
+      - '&fBest Streaks: &a<beststreaks>'
+      - ''
+      - '&ewww.duel.com'
+  ending-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - '&7<date> &8Duel'
+      - ''
+      - '&fName: &a<player>'
+      - '&fRank: &a<rank>'
+      - ''
+      - '&fMap: &a<map>'
+      - ''
+      - '&fMode: &aUHC Duel'
+      - ''
+      - '&fServer: &a<server>'
+      - ''
+      - '&ewww.duel.com'
+  spectator-scoreboard:
+    title: '&e&lDUELS'
+    text-adornment: true
+    lines:
+      - '&7<date> &8Duel'
+      - ''
+      - '&fTime Left: &a<time>'
+      - ''
+      - '&c<team_a>'
+      - '&c<team_b>'
+      - ''
+      - '&fMap: &a<map>'
+      - '&fMode: &aUHC Duel'
+      - ''
+      - '&ewww.duel.com'      

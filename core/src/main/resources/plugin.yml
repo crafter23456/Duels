@@ -1,0 +1,15 @@
+name: Duel
+main: net.Duels.Duel
+version: @version@
+api-version: 1.13
+author: Yenil
+load: POSTWORLD
+softdepend: [MVdWPlaceholderAPI, PlaceholderAPI, Citizens, Multiverse-Core, UltraRegions]
+commands:
+  1vs1:
+    aliases: [duels, duel]
+    description: this is Main Command.
+  kit:
+    description: this is Main Command.
+  map:
+    description: this is Main Command.          

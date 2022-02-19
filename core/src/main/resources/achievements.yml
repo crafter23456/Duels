@@ -1,0 +1,227 @@
+# command-sender: PLAYER OR CONSOLE
+achievements:
+  kills-I:
+    type: KILLS
+    name: "Killer I"
+    description: "Kill 5 Duels Players"
+    amount: 5
+    messages:
+      - "&aAchievement: Killer I Completed!"
+      - "&7 &8+ &320 Duels Experience."
+      - "&7 &8+ &620 Duels Coins."
+    rewards:
+      xp: 20
+      coin: 20
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  kills-II:
+    type: KILLS
+    name: "Killer II"
+    description: "Kill 10 Duels Players"
+    amount: 10
+    messages:
+      - "&aAchievement: Killer II Completed!"
+      - "&7 &8+ &340 Duels Experience."
+      - "&7 &8+ &640 Duels Coins."
+    rewards:
+      xp: 40
+      coin: 40
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  kills-III:
+    type: KILLS
+    name: "Killer III"
+    description: "Kill 20 Duels Players"
+    amount: 20
+    messages:
+      - "&aAchievement: Killer III Completed!"
+      - "&7 &8+ &360 Duels Experience."
+      - "&7 &8+ &660 Duels Coins."
+    rewards:
+      xp: 60
+      coin: 60
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  kills-IV:
+    type: KILLS
+    name: "Killer IV"
+    description: "Kill 50 Duels Players"
+    amount: 50
+    messages:
+      - "&aAchievement: Killer IV Completed!"
+      - "&7 &8+ &380 Duels Experience."
+      - "&7 &8+ &680 Duels Coins."
+    rewards:
+      xp: 80
+      coin: 80
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  kills-V:
+    type: KILLS
+    name: "Killer V"
+    description: "Kill 100 Duels Players"
+    amount: 100
+    messages:
+      - "&aAchievement: Killer V Completed!"
+      - "&7 &8+ &3100 Duels Experience."
+      - "&7 &8+ &6100 Duels Coins."
+    rewards:
+      xp: 100
+      coin: 100
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  wins-I:
+    type: WINS
+    name: "Winner I"
+    description: "Win 5 Duels Games"
+    amount: 5
+    messages:
+      - "&aAchievement: Winner I Completed!"
+      - "&7 &8+ &320 Duels Experience."
+      - "&7 &8+ &620 Duels Coins."
+    rewards:
+      xp: 20
+      coin: 20
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  wins-II:
+    type: WINS
+    name: "Winner II"
+    description: "Win 10 Duels Games"
+    amount: 10
+    messages:
+      - "&aAchievement: Winner II Completed!"
+      - "&7 &8+ &340 Duels Experience."
+      - "&7 &8+ &640 Duels Coins."
+    rewards:
+      xp: 40
+      coin: 40
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  wins-III:
+    type: WINS
+    name: "Winner III"
+    description: "Win 20 Duels Games"
+    amount: 20
+    messages:
+      - "&aAchievement: Winner III Completed!"
+      - "&7 &8+ &360 Duels Experience."
+      - "&7 &8+ &660 Duels Coins."
+    rewards:
+      xp: 60
+      coin: 60
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  wins-IV:
+    type: WINS
+    name: "Winner IV"
+    description: "Win 50 Duels Games"
+    amount: 50
+    messages:
+      - "&aAchievement: Winner IV Completed!"
+      - "&7 &8+ &380 Duels Experience."
+      - "&7 &8+ &680 Duels Coins."
+    rewards:
+      xp: 80
+      coin: 80
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  wins-V:
+    type: WINS
+    name: "Winner V"
+    description: "Win 100 Duels Games"
+    amount: 100
+    messages:
+      - "&aAchievement: Winner V Completed!"
+      - "&7 &8+ &3100 Duels Experience."
+      - "&7 &8+ &6100 Duels Coins."
+    rewards:
+      xp: 100
+      coin: 100
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  score-I:
+    type: SCORE
+    name: "Score I"
+    description: "Score 10 Duels Games"
+    amount: 10
+    messages:
+      - "&aAchievement: Score I Completed!"
+      - "&7 &8+ &320 Duels Experience."
+      - "&7 &8+ &620 Duels Coins."
+    rewards:
+      xp: 20
+      coin: 20
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  score-II:
+    type: SCORE
+    name: "Score II"
+    description: "Score 20 Duels Games"
+    amount: 20
+    messages:
+      - "&aAchievement: Score II Completed!"
+      - "&7 &8+ &340 Duels Experience."
+      - "&7 &8+ &640 Duels Coins."
+    rewards:
+      xp: 40
+      coin: 40
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  score-III:
+    type: SCORE
+    name: "Score III"
+    description: "Score 30 Duels Games"
+    amount: 30
+    messages:
+      - "&aAchievement: Score III Completed!"
+      - "&7 &8+ &360 Duels Experience."
+      - "&7 &8+ &660 Duels Coins."
+    rewards:
+      xp: 60
+      coin: 60
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  score-IV:
+    type: SCORE
+    name: "Score IV"
+    description: "Score 40 Duels Games"
+    amount: 40
+    messages:
+      - "&aAchievement: Score IV Completed!"
+      - "&7 &8+ &380 Duels Experience."
+      - "&7 &8+ &680 Duels Coins."
+    rewards:
+      xp: 80
+      coin: 80
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'
+  score-V:
+    type: SCORE
+    name: "Score V"
+    description: "Score 50 Duels Games"
+    amount: 50
+    messages:
+      - "&aAchievement: Score V Completed!"
+      - "&7 &8+ &3100 Duels Experience."
+      - "&7 &8+ &6100 Duels Coins."
+    rewards:
+      xp: 100
+      coin: 100
+      sound: 'sounds.action.achievement-reward'
+      commands: []
+      command-sender: 'CONSOLE'                                 

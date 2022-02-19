@@ -1,0 +1,281 @@
+#    ________  ___  ___  _______   ___
+#    |\   ___ \|\  \|\  \|\  ___ \ |\  \
+#    \ \  \_|\ \ \  \\\  \ \   __/|\ \  \
+#     \ \  \ \\ \ \  \\\  \ \  \_|/_\ \  \
+#      \ \  \_\\ \ \  \\\  \ \  \_|\ \ \  \____
+#       \ \_______\ \_______\ \_______\ \_______\
+#        \|_______|\|_______|\|_______|\|_______|
+#~
+#   !! Please use UTF-8 when editing this file! !!
+#~
+no-permission: '&cYou dont have no permission!'
+no-console: '&cThis command cannot be used as a console!'
+commands:
+  descriptions:
+    default-setup: '&f&oSetup Command'
+    default-hologram: '&f&oHologram Command'
+    default-admin: '&f&oAdmin Command'
+    default-user: '&f&oUser Command'
+    setup:
+      create: '<name> &f&oCreate a arena'
+      delete: '<name> &f&oDelete a arena'
+      setlobby: '&f&oSet lobby location'
+      addstatsnpc: '<id> &f&oCreate a Stats NPC'
+      addplaynpc: '<id> &f&oCreate a Play NPC'
+      addtrailshopnpc: '<id> &f&oCreate a Trail Shop NPC'
+      addachievementnpc: '<id> &f&oCreate a Achievement NPC'
+      removestatsnpc: '<id> &f&oRemove a Stats NPC'
+      removeplaynpc: '<id> &f&oRemove a Play NPC'
+      removetrailshopnpc: '<id> &f&oRemove a Trail Shop NPC'
+      removeachievementnpc: '<id> &f&oRemove a Achievement NPC'
+    hologram:
+      createhologram: '<type> &f&oCreate the Hologram'
+      deletehologram: '<type> &f&oDelete the hologram'
+      updatehologram: '&f&oUpdate hologram to everyone'
+    user:
+      join: '<name> &f&oJoin on arena'
+      randomjoin: '&f&oJoin on arena fast'
+      play: '&f&oOpen arena menu'
+      leave: '&f&oLeave from arena'
+      top: '<type> &f&oSee the top of kills'
+      stats: '&f&oOpen stats menu'
+      list: '&f&oView a list of currently created game arenas'
+      duel: '<player> &f&oInvite duel'
+      spectate: '<name> &f&oSpectate arena'     
+    admin:
+      world-teleport: '<world> &f&oTeleport to this world'
+      start: '<name> &f&oForce Arena to start'
+      stop: '<name> &f&oForce Arena to stop'
+      draw: '<name> &f&oForce Arena to draw'      
+      reload: '&f&oReloads the plugin'
+    kit:
+      create: '<kitName> <kitPermission> <displayName> <itemName:DATA> &f&oCreate a new kit!'  
+      setcontents: '<kitName> &f&oSets the item of the current kit!'
+      give: '<kitName> &f&oGive yourself a kit!'
+      delete: '<kitName> &f&oDelete the current kit!'
+      addunbreakable: '&f&oApply an unbreakable tag to an item in your hand!'
+      list: '&f&oLists currently available kits!'
+  world-teleport: '&aTeleport to world %%world%% successfully!'
+  set-lobby: '&a&lLobby has been setted!'
+  reload-success: '&aSuccessfully reloaded!'
+  arena-list: '&cArena: %%arena-list%%'
+  kit-list: '&cArena: %%kit-list%%'  
+  top-header: '&7&l&m===================&r&8[&3Top 10&8]&7&l&m==================='
+  top-message: '&a%%index%%&7) &c%%name%%&7: %%value%%'
+  top-footer: '&7&l&m===================&r&8[&3Top 10&8]&7&l&m==================='
+  still-in-development: '&cThis is still in development! Please wait until release!'
+  stats-npc-added: '&aYou have successfully added StatsNPC (%%id%%)'
+  play-npc-added: '&aYou have successfully added PlayNPC (%%id%%)'
+  trailshop-npc-added: '&aYou have successfully added TrailShopNPC (%%id%%)'
+  achievement-npc-added: '&aYou have successfully added AchievementNPC (%%id%%)'
+  stats-npc-removed: '&aYou have successfully removed StatsNPC (%%id%%)'
+  play-npc-removed: '&aYou have successfully removed PlayNPC (%%id%%)'
+  trailshop-npc-removed: '&aYou have successfully removed TrailShopNPC (%%id%%)'
+  achievement-npc-removed: '&aYou have successfully removed AchievementNPC (%%id%%)'
+  stats-hologram-added: '&aYou have successfully added Hologram'
+  stats-hologram-deleted: '&aYou have successfully deleted Hologram'
+  stats-hologram-updated: '&aThe hologram has been updated.'
+  stats-hologram-forcibly-updated: '&aThe hologram has been forcibly updated.'
+  arena-drawn: '&bThe match is in the middle of a draw. Please wait.'
+arenas:
+  arena-restricted-command: '&cYou can''t use commands while in game!'
+  arena-ready-to-create: '&b&lAfter completing the setup, use the exit and save items to add the arena!'
+  arena-world-created: '&aThe world &e%%world%% &ahas been created successfully!'
+  arena-created: '&b&lArena has been added!'
+  arena-delete-kick: '&cThe game in progress was force ended by the administrator!'
+  arena-deleted: '&c%%name%% has been deleted!'
+  own-break: '&cYou can''t break blocks here!'  
+  max-build-y: '&cYou are not allowed to place blocks here!' 
+  arena-force-start: '&cArena %%name%% has been forced to start!'
+  arena-force-end: '&cArena %%name%% has been forced to end!'  
+  no-teleport-player: '&cWe couldn''t find a player to teleport you to!'
+  random-teleport-player: '&aYou were teleported to &7%%player%%'
+  counting:
+    start-title: '&aGO!'
+    start-subtitle: ''
+    cancel-title: '&cCancel...'
+    cancel-subtitle: ''
+    cancel-message: '&cThe count has ended because of insufficient players!'
+    remaining-division-30: '&eThe game starts in &a%%remain%% &eseconds!'
+    remaining-division-15: '&eThe game starts in &a%%remain%% &eseconds!'
+    remaining-5: '&eThe game starts in &c%%remain%% &eseconds!'
+    remaining-5-title: '&e5'
+    remaining-5-subtitle: ''
+    remaining-4: '&eThe game starts in &c%%remain%% &eseconds!'
+    remaining-4-title: '&e4'
+    remaining-4-subtitle: ''
+    remaining-3: '&eThe game starts in &c%%remain%% &eseconds!'
+    remaining-3-title: '&c3'
+    remaining-3-subtitle: ''
+    remaining-2: '&eThe game starts in &c%%remain%% &eseconds!'
+    remaining-2-title: '&c2'
+    remaining-2-subtitle: ''
+    remaining-1: '&eThe game starts in &c%%remain%% &eseconds!'
+    remaining-1-title: '&c1'
+    remaining-1-subtitle: ''
+    start-detect-abnormality: '&cThe game does not seem to have run normally! Force quit the game!'
+    fail-start: '&cPlease reconnect this server! The plugin seems to have encountered a fatal error. Kick all players from the server!'
+    fail-start-message: '&cA serious error occurred in the plugin, so it was kicked from the server!'
+  scoreboard:
+    time-format: 'MM/dd/yy'
+  status:
+    wait: 'Waiting'
+    play: 'Playing'
+    end: 'Ending'
+    reset: 'Reseting'
+    invalid: '&cINVALID STATE'
+  ingame:
+    start-message:
+      line: '&7&m&l============================================'
+      messages:
+        - ''
+        - '%%line%%'
+        - ''
+        - '{replace_text_mode}{center_text_mode}&2&l>> &f&lGame: &7%%game_name%%'
+        - ''
+        - '{center_text_mode}&e&lEliminate your opponent!'
+        - ''
+        - '%%line%%'
+    end-message:
+      line: '&7&m&l============================================'
+      messages:
+        - ''
+        - '%%line%%'
+        - ''
+        - '{replace_text_mode}{center_text_mode}&2&l>> &f&lGame: &7%%game_name%%'
+        - ''
+        - '{center_text_mode}&e&lWinner: &a%%winner%%'
+        - ''
+        - '%%line%%'
+    leave-started: '&a&lTeleporting you to the lobby in 3 seconds... Right-click again to cancel the teleport!'
+    leave-cancel: '&c&lTeleport cancelled!'
+    golden-head: '&6Golden Head'
+    golden-head-cooldown: '&cPlease wait a bit before doing this! You can eat %%remain%% seconds remaining!'
+    joined: '&7%%displayname%% &ehas joined (&b%%current%%&e/&b%%max%%&e)!'
+    quited: '&7%%displayname%% &ehas quit!'
+    player-quited: '&7%%displayname%% &chas left the game and has ended!'
+    damage-actionbar: '&fDamage: &a%%damage%%'
+    winner-title: '&6&lVICTORY'
+    winner-subtitle: '&7%%winner%% &fWon the Duel!'
+    winner-message: '&a&lYou have won!'
+    loser-title: '&cGAME OVER!'
+    loser-subtitle: '&7%%winner%% &fWon the Duel!'
+    draw-title: '&eIt''s a draw.'
+    draw-subtitle: '&7You weren''t victorious this time'    
+    loser-message: '&c&lYou lost!'
+    map: '&aYou are currently playing on &e%%map%%'
+  parts:
+    wait-location: '&a&lThe waiting room location has been set!'
+    spec-location: '&a&lSpectator location has been set!'
+    a-team-location: '&1&lA &a&lteam has been set!'
+    b-team-location: '&c&lB &a&lteam has been set!'
+    set-max-build-y-location: '&a&lMax Build Y location has been set!'        
+errors:
+  world-no-exist: '&cThis world don''t exist!'
+  arena-name: '&cThis is the name of the arena that already exists.'
+  arena-complete: '&c&lThe setting is not done yet! Please complete!'
+  arena-found: '&cArena not found!'
+  arena-delete-status: '&cThe progress of the game must be WAITING to delete the arena!'
+  arena-started: '&cThis game is in progress!'
+  arena-ended: '&cThis game is in already ended!'  
+  arena-is-full: '&cThe player is full!'
+  invalid-join-item: '&cThis item has no essential value to enter the game! please try again!'
+  no-games: '&cNo games available!'
+  reload-fail: '&cA serious error occurred during reloading'
+  join-in-setup: '&cWant to relax while setting up the arena? Then rest after setting!'
+  join-in-game: '&cYou are currently playing!'
+  in-game: '&cYou must be in the game to use this command!'
+  not-set-lobby: '&b&l&nLobby is not specified. Please specify a lobby!'
+  start-game: '&cThere must be at least 1 person to start the game!'
+  no-top-type: '&cPlease enter the type! Available types: Kills, Deaths, Wins, Lose, WinStreak, BestStreak, Score, Coin, XP'
+  api-citizen: '&cYou need the "Citizens" plugin to use this command!'
+  contains-stats-npc: '&cThere is already an NPC with that ID!'
+  contains-play-npc: '&cThere is already an NPC with that ID!'
+  contains-trailshop-npc: '&cThere is already an NPC with that ID!'
+  contains-achievement-npc: '&cThere is already an NPC with that ID!'
+  not-contains-stats-npc: "&cI couldn't find a StatsNPC with that ID!"
+  not-contains-play-npc: "&cI couldn't find a PlayNPC with that ID!"
+  not-contains-trailshop-npc: "&cI couldn't find a TrailShopNPC with that ID!"
+  not-contains-achievement-npc: "&cI couldn't find a AchievementNPC with that ID!"
+  not-contains-near-hologram: '&cNear Hologram Not Contains'
+  not-playing-state: '&cYou can use this command only when the game is in progress.'
+  spectator-already-belong: '&cYou are already in the game or in a spectator state!'
+  teleporter-not-online-player: '&cPlayer not found!'
+  invalid-args: '&cInvalid Argment!'
+  not-found-hologram-data: '&cHolographic data could not be found.'
+  not-found-hologram-type: "&cThe plugin found the holographic data, but couldn't find a suitable type."
+  invalid-hologram-type: '&cThe type is not correct. Correct type: %%type%%'
+  blacklist-world-command: '&cYou cannot use this command in that world.'
+guis:
+  play:
+    title: '&8Arena'
+    next-page-item-name: '&aNext Page'
+    back-page-item-name: '&aBack Page'
+    random-item-name: '&8Random Join'
+    random-item-lore:
+      - '&7Right-click to play random arena'
+    arena-item-name: '%%arena_state_color%%%%arena_name%%'
+    arena-item-lore:
+      - ''
+      - '&a➣ &e&lStatus:'
+      - '&fPlayers: &7%%current_player_size%%/%%max_player_size%%'
+      - '&fState: &7%%current_state%%'
+      - ''
+  stats:
+    title: '&8Duels Statistics'
+  achievement:
+    title: '&8Achievements - %%player%%'
+  teleporter:
+    title: '&8Teleporter'
+    name: '&c%%displayName%%'
+    lore:
+      - '&7Health: %%health%%'
+      - '&7Food: %%food%%'
+      - ''
+      - '&7Left-click to spectate!' 
+  spectatorsettings:
+     title: '&8Spectator Settings'    
+     no-speed: '&cYou no longer have any speed effects!'  
+     speed: '&aYou now have Speed %%speed%%!'  
+  kitselector:
+     title: '&8Kit Selector'
+  hotbar-editor:
+    title: '&8Hotbar Editor'
+tablist:
+  prefixes:
+    ingame-myTeam: '&a'
+    ingame-enemyTeam: '&c'
+  lobby-displayName: '%%rank%% %%player%%'
+  setup-displayName: '&c&lSETUP &7%%player%%'
+  waiting-displayName: '%%rank%% %%player%%'
+  spectator-displayName: '&6[SPEC] &7%%player%%'
+chats:
+  lobby: '&7[&6<rank>&7] &7<player> &6<right_chat> &f<message>'
+  ingame: '&a[GAME] &7[&6<rank>&7] &7<player> &f<message>'
+  spectator: '&7[SPECTATOR] &7[&6<rank>&7] &7<player> &f<message>'
+sign:
+  add: '&aSuccessfully added signs!'
+  remove: '&cArena sign removed!'
+kit:
+  select: '&aYou have selected the &e%%kit%% &akit!'  
+  error: '&cThe kit is in error!'
+player-visible:
+  enable: '&aPlayer visibility enabled!'
+  disable: '&cPlayer visibility disabled!'
+  cooldown: '&cYou must wait &e%%cooldown%%s &cbetween uses!'   
+bossbar:
+  waiting:  '&7You are currently playing &dDuel &7on &a%%map%%'
+  timeleft: '&7Time Left: &a%%time%%'
+
+death-messages:
+  void: '&7%%player%% &efell into the void.'
+  knocked: '&7%%player%% &ewas knocked into the void by &7%%killer%%&e.'
+  kill: '&7%%player%% &ewas killed by &7%%killer%%&e.'
+  projectile: '&7%%player%% &ewas shoot by &7%%killer%%&e.'
+  fall: "&7%%player%% &efell into the void."
+  lava: '&7%%player%%% &edied in lava.'
+
+hotbar:
+  save: '&aSave inventory successfully!'
+  load: '&aLoad inventory successfully!'
+  delete: '&CDelete inventory successfully!'

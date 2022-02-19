@@ -1,0 +1,47 @@
+# Format: '{sound},{pitch},{volume}' (I wish you a pleasant config fix)
+invalid-sound-replace: true
+invalid-sound-replace-approximate: true
+invalid-sound: 'none,0f,0f'
+sounds:
+  action:
+    achievement-reward: 'NOTE_PLING,1.0f,2.0f'
+    random-join: 'NOTE_PLING,1.0f,1.0f'
+    arena-created: 'NOTE_PLING,1.0f,1.0f'
+    arena-set-wait-room: 'NOTE_PLING,1.0f,1.0f'
+    arena-set-spec-room: 'NOTE_PLING,1.0f,1.0f'
+    arena-set-a-team: 'NOTE_PLING,1.0f,1.0f'
+    arena-set-b-team: 'NOTE_PLING,1.0f,1.0f'
+    arena-set-max-build-y: 'NOTE_PLING,1.0f,1.0f'        
+    open-play-menu: 'NOTE_PLING,1.0f,1.0f'
+    open-stat-menu: 'NOTE_PLING,1.0f,1.0f'
+    open-achievement-menu: 'NOTE_PLING,1.0f,1.0f'        
+    open-spectatorsettings-menu: 'NOTE_PLING,1.0f,1.0f'  
+    kit-select: 'NOTE_PLING,1.0f,2.0f'      
+  gui:
+    next-page: 'NOTE_PLING,1.0f,1.0f'
+    back-page: 'NOTE_PLING,1.0f,1.0f'
+  ingame:
+    leave:
+      queue: 'NOTE_PLING,1.0f,1.0f'
+      remove-queue: 'NOTE_PLING,1.0f,1.0f'
+      quited: 'NOTE_PLING,1.0f,1.0f'
+    golden-head-eat: 'EAT,1.0f,1.0f'
+    golden-head-cooldown: 'VILLAGER_NO,1.0f,1.0f'
+    counting:
+      remaining-division-30: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-division-15: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-5: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-4: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-3: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-2: 'NOTE_STICKS,1.0f,1.0f'
+      remaining-1: 'NOTE_STICKS,1.0f,1.0f'
+      start: 'ENDERDRAGON_GROWL,1.0f,1.0f'
+  errors:
+    no-available-games: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    no-game: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    arena-is-full: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    arena-started: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    arena-found: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    arena-complete: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    invalid-item: 'ENDERMAN_TELEPORT,1.0f,1.0f'
+    open-shop: 'ENDERMAN_TELEPORT,1.0f,1.0f'

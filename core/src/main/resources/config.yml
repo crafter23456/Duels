@@ -1,0 +1,40 @@
+location:
+  lobby:
+game:
+  whitelist:
+  - /mute
+  - /list  
+arena:
+  time: 5  
+  shield: false
+blacklist-worlds: []
+option:
+  use-lobby-scoreboard: true
+  use-lobby-items: true
+  use-lobby-tablist-name: true
+  rewards: true  
+  save-type: FILE
+  join-teleport: true
+  disable-join-message: true
+  disable-quit-message: true
+  kit: false
+  bossbar: true
+  chat: true
+  bungee: false
+goldenheads:
+  texture: 'http://textures.minecraft.net/texture/3bb612eb495ede2c5ca5178d2d1ecf1ca5a255d25dfc3c254bc47f6848791d8'  
+debug:
+  use: true
+bungeecord:
+  server: duel
+api:
+  placeholder: false
+  mvdwplaceholder: false
+  citizens: true
+mysql:
+  host: 'localhost'
+  port: 3306
+  user: 'duel'
+  password: 'duel'
+  database: 'duel'
+  

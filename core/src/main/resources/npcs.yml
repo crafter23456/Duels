@@ -1,0 +1,52 @@
+hologramUpdateDelay: 20L
+option:
+  statsNPC:
+    type: PLAYER
+    texture:
+      data: 'ewogICJ0aW1lc3RhbXAiIDogMTU5MzUzMTI3MTE2NCwKICAicHJvZmlsZUlkIiA6ICI5MWZlMTk2ODdjOTA0NjU2YWExZmMwNTk4NmRkM2ZlNyIsCiAgInByb2ZpbGVOYW1lIiA6ICJoaGphYnJpcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lMWIxYjVkYTZmYmNmOWEyMWZlMTdiOTk4NGM1NzliNTBkYjM5NTI1MTk5YjNhMTYwYTZlY2UwOWQ5NzBiZGVkIgogICAgfQogIH0KfQ=='
+      signature: 'rwrZE1j9/cmIL//i+AVGnsdM8ls2KYzvo5DdEopF9f8aIBqLn7+jMyL+wZU+raR0FtWGj6Jlj+9kecTGUjURIvIs4V76tJjnVYM/jBssa77BDPCrARSG57xk1Vy+v/F7U5uKt4j5ss5M8tMgqnPIBZ7YggqmGge4nj93a5hqHX7lHOT1/X9JkmE13uCjQL8LBnIhaOg2LtQkM6KmzuKOWtxDEDeXlMQr6keBNbQwzUAi1kt077z7RVxg7oGNAJInTonqxLCS1myx+EQi5k1jm/+xe2cHuExKkjYD83VdnZNDhWNhn0AA0hxlUD4FFB7i1DewfqBP76L7cJhDGtsyjXXpofXJhdlHcsHOu/VK2C2t1TqNTwcw5hdfWVZ1pYBVOWxYTzemfSPAwpwl/rX9YhglGOYROjDJ/o/KgoUd7Cq2wTFfceQX+XRksVEFJ8eKlnYfnXvMWDCcGkLeSZJStRvCKdBLqkj/faaP8ThoXBUZo/ptDyxn6kgl3mLTi25Hwj8CufhTqqXC94EIIpJattFCAJoJBVi0cl6tqJ37Y+EA5styJ+EmTv4GMvFG3gLTGUFLxGYpZWdVy8lDjlO7YMdFfJRDhaf0nbWNUwTLa1kA/qpQihIrpEQZVdj1O0DddZqJ9nXsqN7JvsVCaOfSKTWW5WUabqgRsWeO2csuu6s='
+    gravity: false
+    hologramStartY: -0.3
+    hologramY: 0.35
+    holograms:
+      - '&bStats'
+      - '&e&lRIGHT CLICK'      
+  playNPC:
+    type: PLAYER
+    texture:
+      data: 'ewogICJ0aW1lc3RhbXAiIDogMTU4OTIyNDUzMTYzMywKICAicHJvZmlsZUlkIiA6ICJiMGQ3MzJmZTAwZjc0MDdlOWU3Zjc0NjMwMWNkOThjYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPUHBscyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mOTg3ODg1MzY1NGMzYmIyNmZkMzNlODBmOGVkM2NkZjAzYWIzMjQ3ZjczNjc4NDY0ZTA2ZGExNDNkYmQwYzE3IgogICAgfQogIH0KfQ=='
+      signature: 'yM1SW0l8S1YvdiEGPAtEHrYQKK1NBkVwMGNVPfXD8ZmunngtMzcbQAhMRZ2u5y9jpv9cmJ8Fj4f8RheFAMzD+Hv/5qDVDG/EdEHNNAJ9Z5thqB+0+6v5tOeTeH3b+0X1lYmpQYXGaBe8jlT3BZc/iP2DaZPwrC2ItAQodWar6QiQcHjDD4KZZiJyEreZV1SjJsVU8eBcaEZauqQ6liW6R6gRjKd/rC8uZ0T3Pby7J8En5tB1X0kFr5EGDDY5lk8MVasOWQGFhBiHOCpn3GiJdZerUx/NVaPO48uvcEV9BchPhW24jftHFZ4mUp6ASZ3iTn7Qj0zJksrKIqzVPkTBShf40HO8pYmWw6A7vZAorlsjjCH7g+AvvsKxy5dUV2upeVKJ6ceCr+mTWLyIMILd72fPC2y9p4+zECiQDEzI7FQ2ZhURRPY8FwBuulIKJgq4Fwow3dhE84F3axMqO729qPz9wPhyevGuv6aH0bPM6/krJEKimyA6rTELia1K2tcv0tle9WHUUxsiY9pMBPiJWkwOOhTiijjxG4Yga0Dhww27UjTh757yhSHyjVrpo5eie/azauToEuBYjHa4JyoQJpertcD85ybcjnYD66vn4k0WipV7gR7FLX5amaRZZOzvp7KnlVFOz7Yii1gW88owNeh1W0Ww3wGLfDpP62sAclU='
+    gravity: false
+    hologramStartY: -0.3
+    hologramY: 0.35
+    holograms:
+      - '&e&lCLICK TO PLAY'
+      - '&bUHC Duels'
+      - '&e&l%%player_size%% Players'
+  trailShopNPC:
+    type: PLAYER
+    texture:
+      data: 'eyJ0aW1lc3RhbXAiOjE1Mzg0NDI1MDc2NDksInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDc4Yzk1OGUzN2NhYTk1OTRlZWEyMTQzOTVhODk3MzQyODUzYjFiZThjNWE1YTA1MTBlMjczZjE5MDE4NGEyZiJ9fX0='
+      signature: 'PEPIn0navnnb8EgsV3VSVj95FnrG4o7p6a7efNy8+2dbq8TP8qilyYD/VSes7DBPXBu8x40bv5LOxE1Ef/XuXw2emx2Ni87pJFxaKfZbtyNwAUEoNzyxHUFVsqrEVLh76GznBfLVa7mnsUf+ebOL2WMG9LP50DkgrgqI1ziAkngpSf679EuZa8+pw4nst6juzK1mLAA2gTh5SR/wXm8nfm79cEDs1/PhLjlf+WP65FQ0PPc21iB51e0hLlj5LtdxJlUVPKPKEycD5Ia9n7BrGUG6DPS2Ky/1t6jIBg8r5eJnuhBevEDpOGzHFjgPqqhfTAu5WeaE/M6fZWtl1DHvoFWHyAyXULK4H6gy8OCqklZTPi2HaM5bs9lOMgtOiWLN46BbBF5AMywuzsfxktCnS2CRiFfZ4OdyxUZCpjkAbn15bTnCzA2zs/5kSyVq7NwSHzHu0JogcyqqvF5sS1vdCluKTq13nzHyq3hAsAddOcUarA8u7+4DBoAAw/8iKckBDPy8bEfC+tkh1/cvxiGjfu+LM+1a9mZeAadsYDxpHRUCiza8upIx0NizoqvYfYVrJip/GYvve3b7QqNBzJaCwXSCT5AsMFqNHu8fGsSug1V319eiezbcMEq64SLv2xsgcseK0+7OOD45vBwRxAMZnqiahOiroNnNl7KaroDFAmM='
+    gravity: false
+    hologramStartY: -0.3
+    hologramY: 0.35
+    holograms:
+      - '&bTrail Shop'
+      - '&e&lRIGHT CLICK'      
+  achievementNPC:
+    type: PLAYER
+    texture:
+      data: 'ewogICJ0aW1lc3RhbXAiIDogMTU5NzQzMDgwMjYwMCwKICAicHJvZmlsZUlkIiA6ICJhNmE3MzI2NjZhZTI0YjIwYWQyNmIzYWZkZWZjNmM1MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJNeXN0aWNHYW1lck1hbiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yODI5MDRkM2M0ZmNlODI5MTcxOGRhZTkwOTk1ZTEzNzM4NzFjYjY5ZTIyOGNjMjA0NDk1NjIwYTFhMGVjNTBhIgogICAgfQogIH0KfQ=='
+      signature: 'DV6ehu/ecPY1fBm/TID8ZIKaZZjsqR5DqfhlZS0e3WgkfhO0d1riNN62TVYxb2oqJL3vRH+q5XHCpuAaU7Qk4upUIJEcjD6u7bBOxmgEv2gUpy6iAfOK6AjnrmB1x1XdaKkzyekXXnT30eALvLemEkMwz0ctSVRavA/1cXz4x4K0sAnN/ZpKtiBodqoyoT36puP9Q1Lh7Q0txvRzJvVzR2rpmR+4XFRkiwmrrSx8Gzt/fZsXfvr3w1ZFVc88ywnPoi0spFiBr1WAasWlfWFkcjMs1bh3PchCMoINeCL4xypeFVXuDKq6gZIo9p3eGs2T+jbpD1sZBQBqk/pdANk+957OuewNhqTw6/VjTSwPdEMceVKCjbK+OhEE9ODw9TvwNhYhXEOuI9zqYWdNHpHeytp8kyPOgfzbhx4NTTzICJAqo22NjM9sgNTjyVC3Wtv2S9rdiMKxRn+dJEZXdUIWOtBjCEF4n9twblX/4xBOtcqWrkxa5/ldzK/RJEQRWNgrCUGEnb6T+0o7anWiwGwVf/8tUYSmYkrmQiJ7oZHJYkldJbrZ6a2uImQ7g0Qe9SRRjcdE3iWBUd5PO9EX7V5Xh0ulS0j41uvcVmg3cQdRMs7TPgLcPJw49coozFLf/E/B3VNC90jEcgs1T4yyoXB6w/t3g5ZeYhOzZf4K4u1rGM8='
+    gravity: false
+    hologramStartY: -0.3
+    hologramY: 0.35
+    holograms:
+      - '&bAchievement'
+      - '&e&lRIGHT CLICK'
+npcs:
+  statsNPC: []
+  playNPC: []
+  trailShopNPC: []
+  achievementNPC: []

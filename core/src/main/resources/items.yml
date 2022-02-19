@@ -1,0 +1,412 @@
+# HEY ADMIN! Please don't modify the "type" part of this configure! The plugin may not recognize the item!
+lobby:
+  play:
+    enable: true
+    slot: 0
+    type: 'PLAY'
+    item:
+      material: BOOK
+      data: 0
+      amount: 1
+      displayName: '&a&lPlay &7(Right Click)'
+      lores:
+        - '&7Right-click to play game arena!'
+  stats:
+    enable: true
+    slot: 1
+    type: 'STATS'
+    item:
+      material: PAPER
+      data: 0
+      amount: 1
+      displayName: '&b&lStats &7(Right Click)'
+      lores:
+        - '&7Right-click to view your stats!'
+  shop:
+    enable: true
+    slot: 3
+    type: 'SHOP'
+    item:
+      material: EMERALD
+      data: 0
+      amount: 1
+      displayName: '&aShop &7(Right Click)'
+      lores:
+        - '&7Right-click to open shop!'
+  achievements:
+    enable: true
+    slot: 5
+    type: 'ACHIEVEMENT_OPEN'
+    item:
+      material: NETHER_STAR
+      data: 0
+      amount: 1
+      displayName: '&eAchievements &7(Right Click)'
+      lores:
+        - '&7Right-click to open Achievement Menu!'
+  gameleave:
+    enable: true
+    slot: 8
+    type: 'BUNGEE_LEAVE'
+    item:
+      material: RED_BED
+      data: 0
+      amount: 1
+      displayName: '&c&lReturn to Lobby &7(Right Click)'
+      lores:
+        - '&7Right-click to leave to leave lobby!'
+ingame:
+  kitselector:
+    enable: false
+    slot: 0
+    type: 'KIT_SELECTOR'
+    item:
+      material: NETHER_STAR
+      data: 0
+      amount: 1
+      displayName: '&e&lSelect Kit &7(Right Click)'
+      lores:
+        - '&7Right-click to open kit selector!'
+  gameleave:
+    enable: true
+    slot: 8
+    type: 'LEAVE'
+    item:
+      material: RED_BED
+      data: 0
+      amount: 1
+      displayName: '&c&lReturn to Lobby &7(Right Click)'
+      lores:
+        - '&7Right-click to leave to leave lobby!'
+spectator:
+  teleporter:
+    enable: true
+    slot: 0
+    type: 'TELEPORTER'
+    item:
+      material: COMPASS
+      data: 0
+      amount: 1
+      displayName: '&a&lTeleporter &7(Right Click)'
+      lores:
+        - '&7Right-click to spectate players!'
+  spectatorsettings:
+    enable: true
+    slot: 4
+    type: 'SPECTATOR_SETTINGS'
+    item:
+      material: COMPARATOR
+      data: 0
+      amount: 1
+      displayName: '&b&lSpectator Settings &7(Right Click)'
+      lores:
+        - '&7Right-click to change your spectator settings!'    
+  playagain:
+    enable: true
+    slot: 7
+    type: 'PLAY_AGAIN'
+    item:
+      material: PAPER
+      data: 0
+      amount: 1
+      displayName: '&b&lPlay Again &7(Right Click)'
+      lores:
+        - '&7Right-click to play another game!'            
+  gameleave:
+    enable: true
+    slot: 8
+    type: 'LEAVE'
+    item:
+      material: RED_BED
+      data: 0
+      amount: 1
+      displayName: '&c&lReturn to Lobby &7(Right Click)'
+      lores:
+        - '&7Right-click to leave to leave lobby!'
+setup:
+  set_waiting:
+    enable: true
+    slot: 0
+    type: 'SET_WAITING_LOCATION'
+    item:
+      material: PAPER
+      data: 0
+      amount: 1
+      displayName: '&b&lSet Waiting Location &7(Right Click)'
+      lores:
+        - '&7Right-click to Set to waiting location!'
+  set_spec:
+    enable: true
+    slot: 1
+    type: 'SET_SPEC_LOCATION'
+    item:
+      material: PAPER
+      data: 0
+      amount: 1
+      displayName: '&b&lSet Spectator Location &7(Right Click)'
+      lores:
+        - '&7Right-click to Set to spectator location!'
+  set_a_team:
+    enable: true
+    slot: 3
+    type: 'SET_A_TEAM_LOCATION'
+    item:
+      material: BLUE_WOOL
+      data: 11
+      amount: 1
+      displayName: '&b&lSet A Team Location &7(Right Click)'
+      lores:
+        - '&7Right-click to Set to A team location!'
+  set_b_team:
+    enable: true
+    slot: 4
+    type: 'SET_B_TEAM_LOCATION'
+    item:
+      material: RED_WOOL
+      data: 14
+      amount: 1
+      displayName: '&b&lSet B Team Location &7(Right Click)'
+      lores:
+        - '&7Right-click to Set to B team location!'
+  set_max_build_y:
+    enable: true
+    slot: 5
+    type: 'SET_MAX_BUILD_Y'
+    item:
+      material: IRON_INGOT
+      data: 0
+      amount: 1
+      displayName: '&c&lSet Max Build Location &7(Right Click)'
+      lores:
+        - '&7Right-click to Set to Max Build Y From Your Location!'        
+  save:
+    enable: true
+    slot: 8
+    type: 'ARENA_SAVE'
+    item:
+      material: RED_BED
+      data: 0
+      amount: 1
+      displayName: '&c&lSave and Quit &7(Right Click)'
+      lores:
+        - '&7Right-click to Save to arena!'
+gui-stats:
+  my-stats:
+    enable: true
+    slot: 13
+    type: 'MY_STATS'
+    item:
+      material: PLAYER_HEAD
+      data: '<player>'
+      amount: 1
+      displayName: '&cMy Stats'
+      lores:
+        - ''
+        - '&fName: &a<player>'
+        - '&fRank: &a<rank>'
+        - '&fProgress: &a<progress>'
+        - '&fKills: &a<kills>'
+        - '&fWins: &a<wins>'
+        - '&fDeaths: &a<deaths>'
+        - '&fBest Streaks: &a<beststreaks>'
+        - '&fScore: &a<score>'
+        - '&fCoins: &a<coins>'
+        - '&fXp: &a<xp>'
+        - ''
+  close:
+    enable: true
+    slot: 22
+    type: 'close'
+    item:
+      material: BARRIER
+      data: 0
+      amount: 1
+      displayName: '&cClose'
+      lores: []
+gui-achievement:
+  achievement-border-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_BORDER_ITEM'
+    item:
+      material: 'GRAY_STAINED_GLASS_PANE'
+      data: 7
+      amount: 1
+      displayName: '&aAchievements %%arrow%%'
+      lores: []
+  next-page-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_NEXT_PAGE'
+    item:
+      material: 'ARROW'
+      data: 0
+      amount: 1
+      displayName: '&aNext Page %%next_page%%'
+      lores: []
+  previous-page-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_PREVIOUS_PAGE'
+    item:
+      material: 'ARROW'
+      data: 0
+      amount: 1
+      displayName: '&aPrevious Page %%previous_page%%'
+      lores: []
+  close-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_CLOSE'
+    item:
+      material: 'BARRIER'
+      data: 0
+      amount: 1
+      displayName: '&cClose'
+      lores:
+        - '&7Click to close this menu!'
+  achievement-title-kills-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_TITLE_KILLS'
+    item:
+      material: 'DIAMOND_SWORD'
+      data: 0
+      amount: 1
+      displayName: '&aKill Achievements'
+      lores:
+        - '&7Archievements of kills players in games!'
+  achievement-title-wins-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_TITLE_WINS'
+    item:
+      material: 'DIAMOND'
+      data: 0
+      amount: 1
+      displayName: '&aWin Achievements'
+      lores:
+        - '&7Archievements of win games!'
+  achievement-title-score-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_TITLE_SCORE'
+    item:
+      material: 'PAPER'
+      data: 0
+      amount: 1
+      displayName: '&aScore Achievements'
+      lores:
+        - '&7Archievements of score games!'        
+  achievement-locked-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_LOCKED'
+    item:
+      material: 'RED_STAINED_GLASS_PANE'
+      data: 14
+      amount: 1
+      displayName: '&c%%name%%'
+      lores:
+        - "&e%%description%%"
+        - "&7"
+        - "&7Reward:"
+        - "&8+ &3%%xp%% Duels Experience"
+        - "&8+ &6%%coin%% Duels Coins"
+        - "&7"
+        - "&7Completed: &a%%current%%&7/&a%%amount%%"
+        - "&7"
+        - "&cAchievement Locked!"
+  achievement-unlocked-item:
+    enable: true
+    slot: -1
+    type: 'ACHIEVEMENT_UNLOCKED'
+    item:
+      material: 'LIME_STAINED_GLASS_PANE'
+      data: 5
+      amount: 1
+      displayName: '&a%%name%%'
+      lores:
+        - "&e%%description%%"
+        - "&7"
+        - "&7Reward:"
+        - "&8+ &3%%xp%% Duels Experience"
+        - "&8+ &6%%coin%% Duels Coins"
+        - "&7"
+        - "&7Completed: &aDONE! &7(&a%%current%%&7)"
+        - "&7"
+        - "&aAchievement Unlocked!"
+gui-spectatorsettings:
+  nospeed-item:
+    enable: true
+    slot: 11
+    type: 'NO_SPEED'
+    item:
+      material: 'LEATHER_BOOTS'
+      data: 0
+      amount: 1
+      displayName: '&aNo Speed'
+      lores: []
+  speedi-item:
+    enable: true
+    slot: 12
+    type: 'SPEED_I'
+    item:
+      material: 'CHAINMAIL_BOOTS'
+      data: 0
+      amount: 1
+      displayName: '&aSpeed I'
+      lores: []
+  speedii-item:
+    enable: true
+    slot: 13
+    type: 'SPEED_II'
+    item:
+      material: 'GOLDEN_BOOTS'
+      data: 0
+      amount: 1
+      displayName: '&aSpeed II'
+      lores: []
+  speediii-item:
+    enable: true
+    slot: 14
+    type: 'SPEED_III'
+    item:
+      material: 'IRON_BOOTS'
+      data: 0
+      amount: 1
+      displayName: '&aSpeed III'
+      lores: []                       
+  speediv-item:
+    enable: true
+    slot: 15
+    type: 'SPEED_IV'
+    item:
+      material: 'DIAMOND_BOOTS'
+      data: 0
+      amount: 1
+      displayName: '&aSpeed IV'
+      lores: []    
+player-visible-items:
+  player-visible-enable-item:
+    enable: true
+    slot: 7
+    type: 'PLAYER_VISIBLE_ENABLE'
+    item:
+      material: LIME_DYE
+      data: 10
+      amount: 1
+      displayName: '&fPlayers: &aVisible &7(Right Click)'
+      lores:
+        - '&7Right-click to toggle player visibility!' 
+  player-visible-disable-item:
+    enable: true
+    slot: 7
+    type: 'PLAYER_VISIBLE_DISABLE'
+    item:
+      material: GRAY_DYE
+      data: 8
+      amount: 1
+      displayName: '&fPlayers: &cHidden &7(Right Click)'
+      lores:
+        - '&7Right-click to toggle player visibility!'

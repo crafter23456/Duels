@@ -1,0 +1,3 @@
+win-rewards: 
+  - "eco give %%winner%% 1000"
+  - "give %%winner%% diamond 1"
