@@ -3,7 +3,6 @@ package net.Duels.arenas.phase.impls;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 import net.Duels.Duel;
 import net.Duels.arenas.Arena;

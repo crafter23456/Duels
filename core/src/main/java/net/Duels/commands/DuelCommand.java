@@ -712,7 +712,7 @@ public class DuelCommand implements CommandExecutor, TabCompleter {
 			return;
 		}
 		sender.sendMessage(ChatUtils.colorTranslate("&f&m-----------------------------"));
-		sender.sendMessage(ChatUtils.colorTranslate("   &bDuel by Yenil"));
+		sender.sendMessage(ChatUtils.colorTranslate("   &bDuel by crafter2345"));
 		sender.sendMessage("");
 		sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 setup "
 				+ Duel.getMessageConfig().getString("commands.descriptions.default-setup")));

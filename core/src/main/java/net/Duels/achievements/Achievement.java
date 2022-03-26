@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import lombok.Getter;
-import org.bukkit.command.CommandSender;
 
 import net.Duels.Duel;
 import net.Duels.player.PlayerObject;
