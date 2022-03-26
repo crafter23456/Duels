@@ -37,12 +37,6 @@ public class EventUtils {
 			}
 			new StatsGUI(playerObject);
 			playerObject.playSound("sounds.action.open-stat-menu");
-		} else if (type.equalsIgnoreCase("shop")) {
-			if (action == Action.LEFT_CLICK_AIR || action == Action.LEFT_CLICK_BLOCK) {
-				return;
-			}
-			playerObject.getPlayer().sendMessage(Duel.getMessageConfig().getString("commands.still-in-development"));
-			playerObject.playSound("sounds.errors.open-shop");
 		} else if (type.equalsIgnoreCase("close")) {
 			if (playerObject.getPlayer().getOpenInventory() != null) {
 				playerObject.getPlayer().closeInventory();

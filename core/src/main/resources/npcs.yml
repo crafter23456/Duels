@@ -23,17 +23,6 @@ option:
       - '&e&lCLICK TO PLAY'
       - '&bUHC Duels'
       - '&e&l%%player_size%% Players'
-  trailShopNPC:
-    type: PLAYER
-    texture:
-      data: 'eyJ0aW1lc3RhbXAiOjE1Mzg0NDI1MDc2NDksInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDc4Yzk1OGUzN2NhYTk1OTRlZWEyMTQzOTVhODk3MzQyODUzYjFiZThjNWE1YTA1MTBlMjczZjE5MDE4NGEyZiJ9fX0='
-      signature: 'PEPIn0navnnb8EgsV3VSVj95FnrG4o7p6a7efNy8+2dbq8TP8qilyYD/VSes7DBPXBu8x40bv5LOxE1Ef/XuXw2emx2Ni87pJFxaKfZbtyNwAUEoNzyxHUFVsqrEVLh76GznBfLVa7mnsUf+ebOL2WMG9LP50DkgrgqI1ziAkngpSf679EuZa8+pw4nst6juzK1mLAA2gTh5SR/wXm8nfm79cEDs1/PhLjlf+WP65FQ0PPc21iB51e0hLlj5LtdxJlUVPKPKEycD5Ia9n7BrGUG6DPS2Ky/1t6jIBg8r5eJnuhBevEDpOGzHFjgPqqhfTAu5WeaE/M6fZWtl1DHvoFWHyAyXULK4H6gy8OCqklZTPi2HaM5bs9lOMgtOiWLN46BbBF5AMywuzsfxktCnS2CRiFfZ4OdyxUZCpjkAbn15bTnCzA2zs/5kSyVq7NwSHzHu0JogcyqqvF5sS1vdCluKTq13nzHyq3hAsAddOcUarA8u7+4DBoAAw/8iKckBDPy8bEfC+tkh1/cvxiGjfu+LM+1a9mZeAadsYDxpHRUCiza8upIx0NizoqvYfYVrJip/GYvve3b7QqNBzJaCwXSCT5AsMFqNHu8fGsSug1V319eiezbcMEq64SLv2xsgcseK0+7OOD45vBwRxAMZnqiahOiroNnNl7KaroDFAmM='
-    gravity: false
-    hologramStartY: -0.3
-    hologramY: 0.35
-    holograms:
-      - '&bTrail Shop'
-      - '&e&lRIGHT CLICK'      
   achievementNPC:
     type: PLAYER
     texture:
@@ -48,5 +37,4 @@ option:
 npcs:
   statsNPC: []
   playNPC: []
-  trailShopNPC: []
   achievementNPC: []

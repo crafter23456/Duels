@@ -44,4 +44,3 @@ sounds:
     arena-found: 'ENDERMAN_TELEPORT,1.0f,1.0f'
     arena-complete: 'ENDERMAN_TELEPORT,1.0f,1.0f'
     invalid-item: 'ENDERMAN_TELEPORT,1.0f,1.0f'
-    open-shop: 'ENDERMAN_TELEPORT,1.0f,1.0f'

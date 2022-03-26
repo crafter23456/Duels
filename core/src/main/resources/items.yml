@@ -22,20 +22,9 @@ lobby:
       displayName: '&b&lStats &7(Right Click)'
       lores:
         - '&7Right-click to view your stats!'
-  shop:
-    enable: true
-    slot: 3
-    type: 'SHOP'
-    item:
-      material: EMERALD
-      data: 0
-      amount: 1
-      displayName: '&aShop &7(Right Click)'
-      lores:
-        - '&7Right-click to open shop!'
   achievements:
     enable: true
-    slot: 5
+    slot: 4
     type: 'ACHIEVEMENT_OPEN'
     item:
       material: NETHER_STAR

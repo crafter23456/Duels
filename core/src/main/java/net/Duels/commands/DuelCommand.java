@@ -337,34 +337,6 @@ public class DuelCommand implements CommandExecutor, TabCompleter {
 			Duel.getNpcController().addNPC(NPCType.PLAY_NPC, id, player.getLocation());
 			sender.sendMessage(Duel.getMessageConfig().getString("commands.play-npc-added").replace("%%id%%", id));
 			return true;
-		} else if (subCommand.equalsIgnoreCase("addtrailshopnpc")) {
-			if (!sender.hasPermission("duel.command.addtrailshopnpc")) {
-				sender.sendMessage(Duel.getMessageConfig().getString("no-permission"));
-				return true;
-			}
-
-			if (!Duel.getMainConfig().isCitizensAPI() || !APIUtils.isCitizens()) {
-				sender.sendMessage(Duel.getMessageConfig().getString("errors.api-citizen"));
-				return true;
-			}
-
-			if (args.length <= 1) {
-				sender.sendMessage("");
-				sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 addtrailshopnpc "
-						+ Duel.getMessageConfig().getString("commands.descriptions.setup.addtrailshopnpc")));
-				sender.sendMessage("");
-				return true;
-			}
-
-			String id = args[1];
-			if (Duel.getNpcController().contains(NPCType.TRAIL_SHOP_NPC, id)) {
-				sender.sendMessage(Duel.getMessageConfig().getString("errors.contains-trailshop-npc"));
-				return true;
-			}
-
-			Duel.getNpcController().addNPC(NPCType.TRAIL_SHOP_NPC, id, player.getLocation());
-			sender.sendMessage(Duel.getMessageConfig().getString("commands.trailshop-npc-added").replace("%%id%%", id));
-			return true;
 		} else if (subCommand.equalsIgnoreCase("addachievementnpc")) {
 			if (!sender.hasPermission("duel.command.addachievementnpc")) {
 				sender.sendMessage(Duel.getMessageConfig().getString("no-permission"));
@@ -437,31 +409,6 @@ public class DuelCommand implements CommandExecutor, TabCompleter {
 			}
 			Duel.getNpcController().removeNPC(NPCType.PLAY_NPC, id);
 			sender.sendMessage(Duel.getMessageConfig().getString("commands.play-npc-removed").replace("%%id%%", id));
-			return true;
-		} else if (subCommand.equalsIgnoreCase("removetrailshopnpc")) {
-			if (!sender.hasPermission("duel.command.removetrailshopnpc")) {
-				sender.sendMessage(Duel.getMessageConfig().getString("no-permission"));
-				return true;
-			}
-			if (!Duel.getMainConfig().isCitizensAPI() || !APIUtils.isCitizens()) {
-				sender.sendMessage(Duel.getMessageConfig().getString("errors.api-citizen"));
-				return true;
-			}
-			if (args.length <= 1) {
-				sender.sendMessage("");
-				sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 removetrailshopnpc "
-						+ Duel.getMessageConfig().getString("commands.descriptions.setup.removetrailshopnpc")));
-				sender.sendMessage("");
-				return true;
-			}
-			String id = args[1];
-			if (!Duel.getNpcController().contains(NPCType.TRAIL_SHOP_NPC, id)) {
-				sender.sendMessage(Duel.getMessageConfig().getString("errors.not-contains-trailshop-npc"));
-				return true;
-			}
-			Duel.getNpcController().removeNPC(NPCType.TRAIL_SHOP_NPC, id);
-			sender.sendMessage(
-					Duel.getMessageConfig().getString("commands.trailshop-npc-removed").replace("%%id%%", id));
 			return true;
 		} else if (subCommand.equalsIgnoreCase("removeachievementnpc")) {
 			if (!sender.hasPermission("duel.command.removeachievementnpc")) {
@@ -742,9 +689,8 @@ public class DuelCommand implements CommandExecutor, TabCompleter {
 				tab.addAll(Arrays.asList("setup", "admin", "user"));
 			}
 			if (sender.hasPermission("duel.command.help.setup")) {
-				tab.addAll(Arrays.asList("create", "delete", "setlobby", "addstatsnpc", "addplaynpc", "addtrailshopnpc",
-						"addachievementnpc", "removestatsnpc", "removeplaynpc", "removetrailshopnpc",
-						"removeachievementnpc"));
+				tab.addAll(Arrays.asList("create", "delete", "setlobby", "addstatsnpc", "addplaynpc",
+						"addachievementnpc", "removestatsnpc", "removeplaynpc", "removeachievementnpc"));
 			}
 			if (sender.hasPermission("duel.command.help.admin")) {
 				tab.addAll(Arrays.asList("worldteleport", "start", "stop", "draw", "reload"));
@@ -796,16 +742,12 @@ public class DuelCommand implements CommandExecutor, TabCompleter {
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.addplaynpc")));
 			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 addplaynpc "
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.addplaynpc")));
-			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 addtrailshopnpc "
-					+ Duel.getMessageConfig().getString("commands.descriptions.setup.addplaynpc")));
 			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 addachievementnpc "
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.addachievementnpc")));
 			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 removestatsnpc "
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.removestatsnpc")));
 			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 removeplaynpc "
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.removeplaynpc")));
-			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 removetrailshopnpc "
-					+ Duel.getMessageConfig().getString("commands.descriptions.setup.removetrailshopnpc")));
 			sender.sendMessage(ChatUtils.colorTranslate("  &b\u25b6 &7/1vs1 removeachievmentnpc "
 					+ Duel.getMessageConfig().getString("commands.descriptions.setup.removeachievementnpc")));
 			sender.sendMessage("");

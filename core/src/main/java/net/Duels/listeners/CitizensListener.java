@@ -83,12 +83,6 @@ public class CitizensListener implements Listener {
 								new StatsGUI(playerObject);
 								return;
 							}
-							if (type == NPCType.TRAIL_SHOP_NPC) {
-								playerObject.getPlayer().sendMessage(
-										Duel.getMessageConfig().getString("commands.still-in-development"));
-								playerObject.playSound("sounds.errors.open-shop");
-								return;
-							}
 							if (type == NPCType.ACHIEVEMENT_NPC) {
 								new AchievementGUI(playerObject).createAchievementMenu(1);
 								return;

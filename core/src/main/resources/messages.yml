@@ -22,11 +22,9 @@ commands:
       setlobby: '&f&oSet lobby location'
       addstatsnpc: '<id> &f&oCreate a Stats NPC'
       addplaynpc: '<id> &f&oCreate a Play NPC'
-      addtrailshopnpc: '<id> &f&oCreate a Trail Shop NPC'
       addachievementnpc: '<id> &f&oCreate a Achievement NPC'
       removestatsnpc: '<id> &f&oRemove a Stats NPC'
       removeplaynpc: '<id> &f&oRemove a Play NPC'
-      removetrailshopnpc: '<id> &f&oRemove a Trail Shop NPC'
       removeachievementnpc: '<id> &f&oRemove a Achievement NPC'
     hologram:
       createhologram: '<type> &f&oCreate the Hologram'
@@ -66,11 +64,9 @@ commands:
   still-in-development: '&cThis is still in development! Please wait until release!'
   stats-npc-added: '&aYou have successfully added StatsNPC (%%id%%)'
   play-npc-added: '&aYou have successfully added PlayNPC (%%id%%)'
-  trailshop-npc-added: '&aYou have successfully added TrailShopNPC (%%id%%)'
   achievement-npc-added: '&aYou have successfully added AchievementNPC (%%id%%)'
   stats-npc-removed: '&aYou have successfully removed StatsNPC (%%id%%)'
   play-npc-removed: '&aYou have successfully removed PlayNPC (%%id%%)'
-  trailshop-npc-removed: '&aYou have successfully removed TrailShopNPC (%%id%%)'
   achievement-npc-removed: '&aYou have successfully removed AchievementNPC (%%id%%)'
   stats-hologram-added: '&aYou have successfully added Hologram'
   stats-hologram-deleted: '&aYou have successfully deleted Hologram'
@@ -191,11 +187,9 @@ errors:
   api-citizen: '&cYou need the "Citizens" plugin to use this command!'
   contains-stats-npc: '&cThere is already an NPC with that ID!'
   contains-play-npc: '&cThere is already an NPC with that ID!'
-  contains-trailshop-npc: '&cThere is already an NPC with that ID!'
   contains-achievement-npc: '&cThere is already an NPC with that ID!'
   not-contains-stats-npc: "&cI couldn't find a StatsNPC with that ID!"
   not-contains-play-npc: "&cI couldn't find a PlayNPC with that ID!"
-  not-contains-trailshop-npc: "&cI couldn't find a TrailShopNPC with that ID!"
   not-contains-achievement-npc: "&cI couldn't find a AchievementNPC with that ID!"
   not-contains-near-hologram: '&cNear Hologram Not Contains'
   not-playing-state: '&cYou can use this command only when the game is in progress.'
