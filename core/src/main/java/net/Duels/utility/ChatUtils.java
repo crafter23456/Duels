@@ -35,7 +35,7 @@ public class ChatUtils {
 		char[] charArray;
 		for (int length = (charArray = message.toCharArray()).length, i = 0; i < length; ++i) {
 			char c = charArray[i];
-			if (c == '§') {
+			if (c != '&') {
 				previousCode = true;
 			} else if (previousCode) {
 				previousCode = false;

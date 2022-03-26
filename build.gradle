@@ -20,14 +20,11 @@ allprojects {
         maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
         maven { url = 'https://repo.codemc.io/repository/maven-public/' }
         maven { url = 'https://jitpack.io' }
-        maven { url = 'https://papermc.io/repo/repository/maven-releases/' }
+        maven { url = 'https://papermc.io/repo/repository/maven-public/' }
         maven { url = 'https://repo.citizensnpcs.co/' }
         maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
         maven { url = 'https://repo.mvdw-software.com/content/groups/public/' }
-        maven {
-            url = "http://dja.kr:55201/spigot"
-            allowInsecureProtocol(true)
-        }
+        maven { url = "https://repo.codemc.io/repository/nms/" }
     }
 
     dependencies {
@@ -36,8 +33,6 @@ allprojects {
             compileOnly(project(":core"))
         }
 
-        // Minecraft dependencies
-        compileOnly 'com.mojang:authlib:1.5.25'
         // Project dependencies
         compileOnly 'org.projectlombok:lombok:1.18.22'
         annotationProcessor 'org.projectlombok:lombok:1.18.22'
